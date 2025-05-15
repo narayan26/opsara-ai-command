@@ -15,8 +15,8 @@ const Navbar = () => {
       <div className="container max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-opsara-700">
-              <span className="text-accent1-600">Opsara</span> AI
+            <div className="text-2xl font-bold text-primary">
+              <span className="text-accent">OpSynth</span> AI
             </div>
           </div>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
             <Button size="sm" variant="outline" className="ml-2">
               Documentation
             </Button>
-            <Button size="sm" className="bg-opsara-600 hover:bg-opsara-700">
+            <Button size="sm" className="bg-opsynth-600 hover:bg-opsynth-700">
               Get Started
             </Button>
           </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <Button variant="outline" className="w-full justify-start">
               Documentation
             </Button>
-            <Button className="w-full justify-start bg-opsara-600 hover:bg-opsara-700">
+            <Button className="w-full justify-start bg-opsynth-600 hover:bg-opsynth-700">
               Get Started
             </Button>
           </div>

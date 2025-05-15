@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				opsara: {
+				opsynth: {
 					'50': '#f0f7ff',
 					'100': '#dfeeff',
 					'200': '#b9ddff',
