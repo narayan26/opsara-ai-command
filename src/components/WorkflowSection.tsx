@@ -1,5 +1,6 @@
+
 import { Button } from "@/components/ui/button";
-import { AlertCircle, BrainCircuit, Layers, MessageCircle } from "lucide-react";
+import { Bot, Cpu, Layers, MessageCircle } from "lucide-react";
 
 const WorkflowSection = () => {
   return (
@@ -28,7 +29,7 @@ const WorkflowSection = () => {
                 <ul className="space-y-3 text-neutral-300">
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Monitoring systems (Datadog, New Relic, Prometheus)</span>
+                    <span>Monitoring systems (Prometheus, New Relic, OpenTelemetry)</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
@@ -55,10 +56,10 @@ const WorkflowSection = () => {
                   </div>
                   <div className="space-y-4">
                     <div className="flex items-center p-3 bg-neutral-800 rounded-lg">
-                      <AlertCircle className="h-8 w-8 text-red-500 mr-3" />
+                      <Cpu className="h-8 w-8 text-red-500 mr-3" />
                       <div>
-                        <p className="font-medium">Datadog</p>
-                        <p className="text-sm text-neutral-400">Alert and metric data</p>
+                        <p className="font-medium">GPUaaS</p>
+                        <p className="text-sm text-neutral-400">Infrastructure metrics</p>
                       </div>
                       <div className="ml-auto">
                         <span className="px-2 py-1 text-xs bg-green-900 text-green-300 rounded-full">Connected</span>
@@ -75,10 +76,10 @@ const WorkflowSection = () => {
                       </div>
                     </div>
                     <div className="flex items-center p-3 bg-neutral-800 rounded-lg">
-                      <Layers className="h-8 w-8 text-purple-500 mr-3" />
+                      <Bot className="h-8 w-8 text-purple-500 mr-3" />
                       <div>
-                        <p className="font-medium">Jira</p>
-                        <p className="text-sm text-neutral-400">Ticket tracking</p>
+                        <p className="font-medium">Agent Platform</p>
+                        <p className="text-sm text-neutral-400">AI workflow data</p>
                       </div>
                       <div className="ml-auto">
                         <span className="px-2 py-1 text-xs bg-green-900 text-green-300 rounded-full">Connected</span>
