@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Bot, Cpu, Layers, MessageCircle } from "lucide-react";
 
@@ -101,7 +100,7 @@ const WorkflowSection = () => {
                     <div className="space-y-4">
                       <div className="flex items-start gap-4">
                         <div className="bg-opsynth-100 dark:bg-opsynth-900 p-2 rounded">
-                          <BrainCircuit className="h-6 w-6 text-opsynth-600" />
+                          <Cpu className="h-6 w-6 text-opsynth-600" />
                         </div>
                         <div>
                           <p className="font-medium">Alert Pattern Analysis</p>
