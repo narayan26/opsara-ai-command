@@ -27,7 +27,7 @@ const HeroSection = () => {
               <LifeBuoy className="h-5 w-5 text-[#9b87f5]" />
               <AlertTitle className="text-[#9b87f5] ml-2">SRE Assistant</AlertTitle>
               <AlertDescription className="ml-2 text-neutral-300">
-                Dedicated AI assistance for Site Reliability Engineers. 24/7 support for your critical infrastructure.
+                Scale your SRE team with a digital agent that never sleeps.
               </AlertDescription>
             </Alert>
             
