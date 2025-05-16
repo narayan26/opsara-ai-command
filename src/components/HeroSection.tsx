@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageSquare, Terminal } from "lucide-react";
+import { ArrowRight, MessageSquare, Terminal, LifeBuoy } from "lucide-react";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 
 const HeroSection = () => {
   return (
@@ -21,6 +22,14 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-neutral-300">
               OpSynth AI summarizes alerts, RCA threads, and war room conversations to help IT ops teams respond to incidents faster — reimagining operations for the AI-native era.
             </p>
+            
+            <Alert className="bg-gradient-to-r from-[#9b87f5]/20 to-[#9b87f5]/5 border border-[#9b87f5]/30 shadow-lg animate-fade-in">
+              <LifeBuoy className="h-5 w-5 text-[#9b87f5]" />
+              <AlertTitle className="text-[#9b87f5] ml-2">SRE Assistant</AlertTitle>
+              <AlertDescription className="ml-2 text-neutral-300">
+                Dedicated AI assistance for Site Reliability Engineers. 24/7 support for your critical infrastructure.
+              </AlertDescription>
+            </Alert>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-opsynth-600 hover:bg-opsynth-700 text-white px-6 py-6 text-lg">
