@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { Bot, Cpu, Layers, MessageCircle } from "lucide-react";
+import { Bot, Cpu, Layers, MessageCircle, ArrowRight } from "lucide-react";
 
 const WorkflowSection = () => {
   return (
@@ -196,11 +195,7 @@ const WorkflowSection = () => {
                     <span>Proactive insights to improve automation</span>
                   </li>
                 </ul>
-                <div className="pt-4">
-                  <Button className="bg-opsynth-600 hover:bg-opsynth-700">
-                    Request Demo
-                  </Button>
-                </div>
+                
               </div>
             </div>
             <div className="order-1 lg:order-2 flex justify-center">
