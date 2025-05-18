@@ -20,7 +20,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-neutral-300">
-              OpSynth helps SRE teams reduce toil, improve SLAs, and scale operations by automating incident management, alert correlation, and service reviews.
+              OpSynth helps SRE teams reduce toil, improve SLAs, and scale operations by automating incident management, alert correlation, and providing proactive insights.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -50,9 +50,9 @@ const HeroSection = () => {
               
               <Alert className="bg-gradient-to-r from-[#45ffa1]/20 to-[#45ffa1]/5 border border-[#45ffa1]/30 shadow-lg">
                 <CheckCircle className="h-5 w-5 text-[#45ffa1]" />
-                <AlertTitle className="text-[#45ffa1] ml-2">Service Reviews</AlertTitle>
+                <AlertTitle className="text-[#45ffa1] ml-2">Proactive Insights</AlertTitle>
                 <AlertDescription className="ml-2 text-neutral-300">
-                  Daily and monthly insights to improve reliability.
+                  Improve automation with AI-powered recommendations.
                 </AlertDescription>
               </Alert>
             </div>

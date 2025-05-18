@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Bot, Cpu, Layers, MessageCircle } from "lucide-react";
 
@@ -192,7 +193,7 @@ const WorkflowSection = () => {
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Post-incident analysis and learnings</span>
+                    <span>Proactive insights to improve automation</span>
                   </li>
                 </ul>
                 <div className="pt-4">
@@ -234,6 +235,11 @@ const WorkflowSection = () => {
                     </div>
                     <div className="text-white font-mono text-sm">
                       <span className="text-yellow-400">dan:</span> @lisa let's try the CUDA rollback like opsara suggests
+                    </div>
+                    <div className="flex items-center bg-neutral-800/50 p-2 rounded-lg">
+                      <div className="text-neutral-400 line-through mr-2">Dashboards</div>
+                      <div className="text-white">→</div>
+                      <div className="text-opsynth-400 ml-2">Conversational Insights</div>
                     </div>
                   </div>
                 </div>
