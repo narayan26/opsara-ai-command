@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageSquare, Terminal, LifeBuoy, Bell, AlertCircle, CheckCircle } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
@@ -52,14 +51,11 @@ const HeroSection = () => {
               </Alert>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 mt-2">
-              <Button className="bg-opsynth-600 hover:bg-opsynth-700 text-white px-6 py-6 text-lg">
-                <a href="https://forms.gle/KenQoq3VwLtZhSxk7" target="_blank" rel="noopener noreferrer" className="flex items-center">
+            <div className="flex mt-2">
+              <Button className="bg-opsynth-600 hover:bg-opsynth-700 text-white px-6 py-6 text-lg w-full sm:w-auto">
+                <a href="https://forms.gle/KenQoq3VwLtZhSxk7" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
                   Join Interest List <ArrowRight size={16} className="ml-2" />
                 </a>
-              </Button>
-              <Button variant="outline" className="px-6 py-6 text-lg border-neutral-700 hover:bg-neutral-800">
-                View Demo
               </Button>
             </div>
             

@@ -17,12 +17,11 @@ const CTASection = () => {
               <p className="text-lg text-white/80 mb-8">
                 Join the growing list of forward-thinking companies using OpSynth to respond faster, reduce MTTR, and maintain reliability at scale.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex justify-center">
                 <Button size="lg" className="bg-white text-opsynth-600 hover:bg-white/90 text-lg px-8">
-                  Request Early Access <ArrowRight size={16} className="ml-2" />
-                </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8">
-                  Book a Demo
+                  <a href="https://forms.gle/KenQoq3VwLtZhSxk7" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    Join Interest List <ArrowRight size={16} className="ml-2" />
+                  </a>
                 </Button>
               </div>
             </div>
