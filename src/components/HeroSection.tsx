@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageSquare, Terminal, LifeBuoy } from "lucide-react";
+import { ArrowRight, MessageSquare, Terminal, LifeBuoy, Bell, AlertCircle, CheckCircle } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 
 const HeroSection = () => {
@@ -11,29 +11,57 @@ const HeroSection = () => {
           <div className="space-y-6">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-opsynth-900/50 text-opsynth-300 text-sm font-medium border border-opsynth-700/50">
               <span className="flex h-2 w-2 rounded-full bg-opsynth-500 mr-2"></span>
-              Now in Private Beta
+              SRE Assistant
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Synthesized Operations for
-              <span className="block gradient-text">AI Apps</span>
+              AI-powered
+              <span className="block gradient-text">SRE Assistant</span>
             </h1>
             
             <p className="text-lg md:text-xl text-neutral-300">
-              OpSynth AI summarizes alerts, RCA threads, and war room conversations to help IT ops teams respond to incidents faster — reimagining operations for the AI-native era.
+              OpSynth helps SRE teams reduce toil, improve SLAs, and scale operations by automating incident management, alert correlation, and service reviews.
             </p>
             
-            <Alert className="bg-gradient-to-r from-[#9b87f5]/20 to-[#9b87f5]/5 border border-[#9b87f5]/30 shadow-lg animate-fade-in">
-              <LifeBuoy className="h-5 w-5 text-[#9b87f5]" />
-              <AlertTitle className="text-[#9b87f5] ml-2">SRE Assistant</AlertTitle>
-              <AlertDescription className="ml-2 text-neutral-300">
-                Scale your SRE team with a digital agent that never sleeps.
-              </AlertDescription>
-            </Alert>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Alert className="bg-gradient-to-r from-[#9b87f5]/20 to-[#9b87f5]/5 border border-[#9b87f5]/30 shadow-lg">
+                <LifeBuoy className="h-5 w-5 text-[#9b87f5]" />
+                <AlertTitle className="text-[#9b87f5] ml-2">24/7 Coverage</AlertTitle>
+                <AlertDescription className="ml-2 text-neutral-300">
+                  Scale your SRE team with a digital agent that never sleeps.
+                </AlertDescription>
+              </Alert>
+              
+              <Alert className="bg-gradient-to-r from-[#45a6ff]/20 to-[#45a6ff]/5 border border-[#45a6ff]/30 shadow-lg">
+                <Bell className="h-5 w-5 text-[#45a6ff]" />
+                <AlertTitle className="text-[#45a6ff] ml-2">Alert Correlation</AlertTitle>
+                <AlertDescription className="ml-2 text-neutral-300">
+                  Reduce noise and identify root causes faster.
+                </AlertDescription>
+              </Alert>
+              
+              <Alert className="bg-gradient-to-r from-[#ff7645]/20 to-[#ff7645]/5 border border-[#ff7645]/30 shadow-lg">
+                <AlertCircle className="h-5 w-5 text-[#ff7645]" />
+                <AlertTitle className="text-[#ff7645] ml-2">Incident Management</AlertTitle>
+                <AlertDescription className="ml-2 text-neutral-300">
+                  Automate triage and coordinate response.
+                </AlertDescription>
+              </Alert>
+              
+              <Alert className="bg-gradient-to-r from-[#45ffa1]/20 to-[#45ffa1]/5 border border-[#45ffa1]/30 shadow-lg">
+                <CheckCircle className="h-5 w-5 text-[#45ffa1]" />
+                <AlertTitle className="text-[#45ffa1] ml-2">Service Reviews</AlertTitle>
+                <AlertDescription className="ml-2 text-neutral-300">
+                  Daily and monthly insights to improve reliability.
+                </AlertDescription>
+              </Alert>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-opsynth-600 hover:bg-opsynth-700 text-white px-6 py-6 text-lg">
-                Request Early Access <ArrowRight size={16} className="ml-2" />
+                <a href="https://forms.gle/KenQoq3VwLtZhSxk7" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  Join Interest List <ArrowRight size={16} className="ml-2" />
+                </a>
               </Button>
               <Button variant="outline" className="px-6 py-6 text-lg border-neutral-700 hover:bg-neutral-800">
                 View Demo

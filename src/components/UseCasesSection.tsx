@@ -20,7 +20,7 @@ const UseCasesSection = () => {
             <TabsList className="grid w-full max-w-md grid-cols-3 bg-neutral-800">
               <TabsTrigger value="enterprise">Enterprise</TabsTrigger>
               <TabsTrigger value="provider">Service Provider</TabsTrigger>
-              <TabsTrigger value="cloud">Cloud Customer</TabsTrigger>
+              <TabsTrigger value="hyperscaler">Hyperscaler</TabsTrigger>
             </TabsList>
           </div>
 
@@ -132,22 +132,22 @@ const UseCasesSection = () => {
             </div>
           </TabsContent>
 
-          <TabsContent value="cloud" className="mt-0">
+          <TabsContent value="hyperscaler" className="mt-0">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
                 <Card className="border border-neutral-800 bg-neutral-900/50">
                   <CardHeader>
                     <CardTitle className="flex items-center">
                       <Cpu className="h-6 w-6 mr-2 text-opsynth-400" />
-                      Cloud GPU Customers
+                      Hyperscaler GPU Environments
                     </CardTitle>
                     <CardDescription className="text-base text-neutral-400">
-                      For organizations using cloud GPU instances
+                      For GPU environments on AWS, Azure, Google Cloud, etc.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <p className="text-neutral-300">
-                      OpSynth helps teams running on cloud providers optimize their GPU resources and maintain application reliability.
+                      OpSynth helps teams running on hyperscaler platforms optimize their GPU resources and maintain application reliability.
                     </p>
                     <ul className="space-y-2 text-neutral-300">
                       <li className="flex items-start">
@@ -174,7 +174,7 @@ const UseCasesSection = () => {
                   <div className="bg-neutral-900 rounded-xl p-6">
                     <div className="text-lg font-semibold mb-4">Customer story</div>
                     <p className="italic text-neutral-400 mb-6">
-                      "Our ML startup is running production models on cloud GPUs. OpSynth helped us improve reliability while reducing our on-call burden by 70%. It's like having an extra SRE on the team."
+                      "Our ML platform runs on AWS and Azure GPU instances. OpSynth helped us improve reliability while reducing our on-call burden by 70%. The ability to correlate issues across multiple cloud providers has been invaluable."
                     </p>
                     <div>
                       <p className="font-medium">Lead SRE</p>
