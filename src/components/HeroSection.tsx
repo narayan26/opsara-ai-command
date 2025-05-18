@@ -5,15 +5,10 @@ import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 
 const HeroSection = () => {
   return (
-    <section className="py-16 md:py-24 px-6 md:px-8 lg:px-12 overflow-hidden">
+    <section className="py-12 md:py-20 px-6 md:px-8 lg:px-12 overflow-hidden">
       <div className="container max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-opsynth-900/50 text-opsynth-300 text-sm font-medium border border-opsynth-700/50">
-              <span className="flex h-2 w-2 rounded-full bg-opsynth-500 mr-2"></span>
-              SRE Assistant
-            </div>
-            
+          <div className="space-y-5">            
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               AI-powered
               <span className="block gradient-text">SRE Assistant</span>
@@ -57,7 +52,7 @@ const HeroSection = () => {
               </Alert>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mt-2">
               <Button className="bg-opsynth-600 hover:bg-opsynth-700 text-white px-6 py-6 text-lg">
                 <a href="https://forms.gle/KenQoq3VwLtZhSxk7" target="_blank" rel="noopener noreferrer" className="flex items-center">
                   Join Interest List <ArrowRight size={16} className="ml-2" />
@@ -68,11 +63,11 @@ const HeroSection = () => {
               </Button>
             </div>
             
-            <div className="pt-4">
+            <div className="pt-3">
               <p className="text-sm text-neutral-400">
                 Trusted by SREs at forward-thinking companies
               </p>
-              <div className="flex flex-wrap gap-8 mt-4 opacity-70">
+              <div className="flex flex-wrap gap-8 mt-3 opacity-70">
                 <div className="h-8 w-auto text-neutral-400">Fortune 500 Tech</div>
                 <div className="h-8 w-auto text-neutral-400">Global Financial Institution</div>
                 <div className="h-8 w-auto text-neutral-400">Leading GPU Provider</div>
