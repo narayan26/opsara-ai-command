@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Server, Cloud, Shield, Zap } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
@@ -94,7 +93,7 @@ const HeroSection = () => {
                 <div className="bg-neutral-800 rounded-lg p-3 border border-neutral-700">
                   <div className="text-opsynth-400 text-sm mb-2">Natural Language Command:</div>
                   <div className="text-white font-mono text-sm typing-animation">
-                    "Migrate all VMs from ESXi host prod-esx-07 to available hosts in the same cluster with DRS rules maintained"
+                    "Create a SQL Server DB loan-db-008 instance based on the latest gold image, give it same high performance storage as loan-db-007, and ensure that only app-server-45 and app-server-46 have secure connectivity to the new VM"
                   </div>
                 </div>
 
@@ -104,15 +103,15 @@ const HeroSection = () => {
                   
                   <div className="space-y-2">
                     <div className="flex items-center justify-between bg-neutral-800/50 p-2 rounded border-l-4 border-green-500">
-                      <span className="text-white text-sm">1. Validate cluster capacity</span>
+                      <span className="text-white text-sm">1. Validate gold image availability</span>
                       <span className="text-green-400 text-xs">✓ Complete</span>
                     </div>
                     <div className="flex items-center justify-between bg-neutral-800/50 p-2 rounded border-l-4 border-blue-500">
-                      <span className="text-white text-sm">2. Check DRS anti-affinity rules</span>
+                      <span className="text-white text-sm">2. Clone storage profile from loan-db-007</span>
                       <span className="text-blue-400 text-xs">In Progress</span>
                     </div>
                     <div className="flex items-center justify-between bg-neutral-800/50 p-2 rounded border-l-4 border-neutral-600">
-                      <span className="text-neutral-400 text-sm">3. Execute vMotion operations</span>
+                      <span className="text-neutral-400 text-sm">3. Configure network security groups</span>
                       <span className="text-neutral-500 text-xs">Pending</span>
                     </div>
                   </div>
@@ -121,16 +120,16 @@ const HeroSection = () => {
                 {/* Live Status */}
                 <div className="bg-gradient-to-r from-opsynth-900/50 to-accent1-900/30 p-3 rounded-lg border border-accent1-800/30">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-accent1-300 text-sm font-medium">Live Migration Status</span>
+                    <span className="text-accent1-300 text-sm font-medium">VM Deployment Status</span>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                       <span className="text-green-400 text-xs">Active</span>
                     </div>
                   </div>
                   <div className="space-y-1 text-xs text-neutral-300">
-                    <div>• VM-PROD-WEB-01: vMotion 87% complete → esx-prod-12</div>
-                    <div>• VM-PROD-DB-03: Queued for migration → esx-prod-15</div>
-                    <div>• 14 VMs remaining • ETA: 12 minutes</div>
+                    <div>• SQL Server template: Windows 2022 + SQL 2022 Enterprise</div>
+                    <div>• Storage: 2TB NVMe SSD provisioned (matching loan-db-007)</div>
+                    <div>• Network: Isolated VLAN with firewall rules configured</div>
                   </div>
                 </div>
 
