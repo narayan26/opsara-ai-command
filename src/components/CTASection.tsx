@@ -12,10 +12,10 @@ const CTASection = () => {
           <div className="relative px-8 py-16 md:p-16">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Ready to transform how your team handles incidents?
+                Ready to unify your hybrid infrastructure?
               </h2>
               <p className="text-lg text-white/80 mb-8">
-                Join the growing list of forward-thinking companies using OpSynth to respond faster, reduce MTTR, and maintain reliability at scale.
+                Join enterprise infrastructure teams who are transforming operations with AI-powered control across VMware, Nutanix, HPE, Dell, and bare metal systems.
               </p>
               <div className="flex justify-center">
                 <Button size="lg" className="bg-white text-opsynth-600 hover:bg-white/90 text-lg px-8">

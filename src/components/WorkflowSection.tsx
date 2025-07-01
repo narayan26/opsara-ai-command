@@ -1,5 +1,6 @@
+
 import { Button } from "@/components/ui/button";
-import { Bot, Cpu, Layers, MessageCircle, ArrowRight } from "lucide-react";
+import { Bot, Cpu, Layers, MessageCircle, ArrowRight, Shield, Database } from "lucide-react";
 
 const WorkflowSection = () => {
   return (
@@ -8,7 +9,7 @@ const WorkflowSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">How OpSynth Works</h2>
           <p className="text-lg text-neutral-300">
-            OpSynth integrates with your existing tools and processes to provide real-time context and recommendations during incidents.
+            OpSynth abstracts vendor-specific complexity through unified control, observation, automation, and remediation across your entire hybrid infrastructure.
           </p>
         </div>
 
@@ -21,26 +22,26 @@ const WorkflowSection = () => {
                   <span className="flex h-5 w-5 items-center justify-center rounded-full bg-opsynth-600 text-white mr-2">1</span>
                   Connect
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold">Connect your data sources</h3>
+                <h3 className="text-2xl md:text-3xl font-bold">Unified Infrastructure Integration</h3>
                 <p className="text-lg text-neutral-300">
-                  OpSynth connects to your alerting tools, communication platforms, and knowledge bases through simple, secure integrations.
+                  OpSynth connects to your entire hybrid infrastructure through secure, multi-tenant integrations that normalize vendor-specific protocols.
                 </p>
                 <ul className="space-y-3 text-neutral-300">
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Monitoring systems (Prometheus, New Relic, OpenTelemetry)</span>
+                    <span>VMware: vCenter SOAP APIs, PowerCLI, PyVMOMI integration</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Chat platforms (Slack, MS Teams, Discord)</span>
+                    <span>Nutanix: Prism Central REST APIs and orchestration</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Ticketing systems (Jira, ServiceNow, Linear)</span>
+                    <span>HPE GreenLake, Dell APEX: OAuth-secured OpenAPIs</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Documentation (Confluence, Notion, GitHub)</span>
+                    <span>Bare Metal: Redfish, IPMI, and custom protocols</span>
                   </li>
                 </ul>
               </div>
@@ -50,35 +51,35 @@ const WorkflowSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-accent1-500/10 to-opsynth-500/10 rounded-full blur-3xl -z-10"></div>
                 <div className="bg-neutral-900 rounded-xl shadow-xl p-6 max-w-md border border-neutral-800">
                   <div className="flex justify-between items-center mb-6">
-                    <h4 className="font-semibold">Integrations</h4>
-                    <Button variant="outline" size="sm">+ Add New</Button>
+                    <h4 className="font-semibold">Infrastructure Platforms</h4>
+                    <Shield className="h-5 w-5 text-green-500" />
                   </div>
                   <div className="space-y-4">
                     <div className="flex items-center p-3 bg-neutral-800 rounded-lg">
-                      <Cpu className="h-8 w-8 text-red-500 mr-3" />
+                      <Cpu className="h-8 w-8 text-blue-500 mr-3" />
                       <div>
-                        <p className="font-medium">GPUaaS</p>
-                        <p className="text-sm text-neutral-400">Infrastructure metrics</p>
+                        <p className="font-medium">VMware vCenter</p>
+                        <p className="text-sm text-neutral-400">SOAP APIs, PowerCLI</p>
                       </div>
                       <div className="ml-auto">
                         <span className="px-2 py-1 text-xs bg-green-900 text-green-300 rounded-full">Connected</span>
                       </div>
                     </div>
                     <div className="flex items-center p-3 bg-neutral-800 rounded-lg">
-                      <MessageCircle className="h-8 w-8 text-blue-500 mr-3" />
+                      <Database className="h-8 w-8 text-purple-500 mr-3" />
                       <div>
-                        <p className="font-medium">Slack</p>
-                        <p className="text-sm text-neutral-400">Team communication</p>
+                        <p className="font-medium">Nutanix Prism</p>
+                        <p className="text-sm text-neutral-400">REST APIs, Terraform</p>
                       </div>
                       <div className="ml-auto">
                         <span className="px-2 py-1 text-xs bg-green-900 text-green-300 rounded-full">Connected</span>
                       </div>
                     </div>
                     <div className="flex items-center p-3 bg-neutral-800 rounded-lg">
-                      <Bot className="h-8 w-8 text-purple-500 mr-3" />
+                      <Bot className="h-8 w-8 text-green-500 mr-3" />
                       <div>
-                        <p className="font-medium">Agent Platform</p>
-                        <p className="text-sm text-neutral-400">AI workflow data</p>
+                        <p className="font-medium">HPE GreenLake</p>
+                        <p className="text-sm text-neutral-400">OAuth OpenAPIs</p>
                       </div>
                       <div className="ml-auto">
                         <span className="px-2 py-1 text-xs bg-green-900 text-green-300 rounded-full">Connected</span>
@@ -96,36 +97,36 @@ const WorkflowSection = () => {
               <div className="flex justify-center">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-accent1-500/10 to-opsynth-500/10 rounded-full blur-3xl -z-10"></div>
-                  <div className="bg-neutral-900 dark:bg-neutral-800 rounded-xl shadow-xl p-6">
+                  <div className="bg-neutral-900 rounded-xl shadow-xl p-6 border border-neutral-800">
                     <div className="space-y-4">
                       <div className="flex items-start gap-4">
-                        <div className="bg-opsynth-100 dark:bg-opsynth-900 p-2 rounded">
-                          <Cpu className="h-6 w-6 text-opsynth-600" />
+                        <div className="bg-opsynth-900 p-2 rounded">
+                          <Layers className="h-6 w-6 text-opsynth-400" />
                         </div>
                         <div>
-                          <p className="font-medium">Alert Pattern Analysis</p>
-                          <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                            Detected recurring memory allocation failures across 3 GPU nodes in cluster prod-ml-east.
+                          <p className="font-medium">HybridInfraGraph Analysis</p>
+                          <p className="text-sm text-neutral-400">
+                            Real-time dependency mapping across VMware cluster prod-west-01, Nutanix block storage, and HPE compute nodes.
                           </p>
                         </div>
                       </div>
                       
-                      <div className="h-px bg-neutral-200 dark:bg-neutral-700 my-4"></div>
+                      <div className="h-px bg-neutral-700 my-4"></div>
                       
-                      <div className="font-mono text-sm bg-neutral-100 dark:bg-neutral-800 p-3 rounded border border-neutral-200 dark:border-neutral-700 mb-4">
-                        <p className="font-semibold mb-2">Related context:</p>
-                        <ul className="space-y-1 list-disc pl-5">
-                          <li>Similar to INC-2347 from last month</li>
-                          <li>Affects TensorFlow workloads specifically</li>
-                          <li>Memory fragmentation present in logs</li>
-                          <li>Started after latest CUDA driver update</li>
+                      <div className="font-mono text-sm bg-neutral-800 p-3 rounded border border-neutral-700 mb-4">
+                        <p className="font-semibold mb-2 text-opsynth-300">Infrastructure Context:</p>
+                        <ul className="space-y-1 list-disc pl-5 text-neutral-300">
+                          <li>Cluster capacity: 67% CPU, 82% memory utilization</li>
+                          <li>Storage: Nutanix RF3 with 15% free capacity</li>
+                          <li>Network: 10Gb uplinks showing 45% utilization</li>
+                          <li>Dependencies: 23 VMs with anti-affinity rules</li>
                         </ul>
                       </div>
                       
-                      <div className="bg-opsynth-50 dark:bg-opsynth-900/30 p-3 rounded-lg border border-opsynth-100 dark:border-opsynth-800">
-                        <p className="font-medium text-opsynth-800 dark:text-opsynth-200 mb-2">Recommended action:</p>
-                        <p className="text-neutral-700 dark:text-neutral-300">
-                          Rollback CUDA driver to v11.8 on affected nodes and increase GPU memory padding parameter to 512MB.
+                      <div className="bg-opsynth-900/30 p-3 rounded-lg border border-opsynth-800">
+                        <p className="font-medium text-opsynth-200 mb-2">AI Recommendation:</p>
+                        <p className="text-neutral-300 text-sm">
+                          Optimal migration window: 2:00-4:00 AM PST. Suggested host order based on workload affinity and resource availability.
                         </p>
                       </div>
                     </div>
@@ -139,26 +140,26 @@ const WorkflowSection = () => {
                   <span className="flex h-5 w-5 items-center justify-center rounded-full bg-opsynth-600 text-white mr-2">2</span>
                   Analyze
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold">Understand the context</h3>
+                <h3 className="text-2xl md:text-3xl font-bold">HybridInfraGraph Intelligence</h3>
                 <p className="text-lg text-neutral-300">
-                  OpSynth uses advanced AI to analyze alerts, conversations, and knowledge bases to build comprehensive context during incidents.
+                  OpSynth builds a real-time dependency graph that maps operational context across all platforms, enabling intelligent automation and optimization.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Correlate related alerts across systems</span>
+                    <span>Cross-platform dependency mapping and impact analysis</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Extract key information from conversations</span>
+                    <span>Resource optimization recommendations</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Find similar historical incidents</span>
+                    <span>Predictive maintenance and capacity planning</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Surface relevant documentation and runbooks</span>
+                    <span>Compliance and security posture analysis</span>
                   </li>
                 </ul>
               </div>
@@ -171,31 +172,30 @@ const WorkflowSection = () => {
               <div className="space-y-6">
                 <div className="inline-flex items-center px-3 py-1 rounded-full bg-opsynth-900/50 text-opsynth-300 text-sm font-medium border border-opsynth-700/50">
                   <span className="flex h-5 w-5 items-center justify-center rounded-full bg-opsynth-600 text-white mr-2">3</span>
-                  Respond
+                  Execute
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold">Take action with confidence</h3>
+                <h3 className="text-2xl md:text-3xl font-bold">Intent-Based Operations</h3>
                 <p className="text-lg text-neutral-300">
-                  OpSynth provides clear, actionable recommendations and automates routine tasks to help you resolve incidents faster.
+                  Transform natural language commands into precise infrastructure operations across all platforms with enterprise-grade security and audit trails.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Automated incident summaries for stakeholders</span>
+                    <span>Natural language to infrastructure operations</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Step-by-step resolution guidance</span>
+                    <span>Multi-step workflow orchestration and rollback</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Automated runbook execution for common issues</span>
+                    <span>Enterprise RBAC and credential isolation</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-opsynth-400 mr-2">✓</span>
-                    <span>Proactive insights to improve automation</span>
+                    <span>Complete audit logging and compliance reporting</span>
                   </li>
                 </ul>
-                
               </div>
             </div>
             <div className="order-1 lg:order-2 flex justify-center">
@@ -206,35 +206,34 @@ const WorkflowSection = () => {
                     <div className="w-3 h-3 rounded-full bg-red-500"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                    <span className="ml-2 text-xs text-neutral-400">slack-channel: #incident-gpu-cluster</span>
+                    <span className="ml-2 text-xs text-neutral-400">Infrastructure Command Center</span>
                   </div>
 
                   <div className="space-y-4">
                     <div className="text-white font-mono text-sm">
-                      <span className="text-opsynth-400">@channel:</span> CRITICAL ALERT - GPU node failures in prod-ml-east
+                      <span className="text-opsynth-400">user@opsynth:</span> Scale out the web tier VMs across availability zones
                     </div>
                     <div className="text-white font-mono text-sm">
-                      <span className="text-yellow-400">dan:</span> Anyone know what's happening with the gpu cluster?
-                    </div>
-                    <div className="text-white font-mono text-sm">
-                      <span className="text-green-400">lisa:</span> Looking into it. Seeing OOM errors in the logs.
-                    </div>
-                    <div className="text-white font-mono text-sm">
-                      <span className="text-accent1-400">opsara &gt;</span> <span className="bg-neutral-800 p-1">INCIDENT SUMMARY</span>
+                      <span className="text-accent1-400">opsynth &gt;</span> Analyzing current deployment...
                     </div>
                     <div className="bg-neutral-800 p-3 rounded border border-neutral-700">
-                      <p className="text-white font-mono text-sm mb-2">• 3 GPU nodes failing in prod-ml-east</p>
-                      <p className="text-white font-mono text-sm mb-2">• Root cause: Memory leak in TensorFlow containers</p>
-                      <p className="text-white font-mono text-sm mb-2">• Similar to incident INC-2347 (resolved by CUDA rollback)</p>
-                      <p className="text-white font-mono text-sm">• Recommended action: Rollback CUDA drivers to v11.8</p>
+                      <div className="text-white font-mono text-sm mb-2">
+                        <span className="text-green-400">✓</span> Found 6 web-tier VMs in single AZ
+                      </div>
+                      <div className="text-white font-mono text-sm mb-2">
+                        <span className="text-blue-400">→</span> Creating 3 VMs in AZ-B, 3 VMs in AZ-C
+                      </div>
+                      <div className="text-white font-mono text-sm">
+                        <span className="text-yellow-400">⚡</span> Updating load balancer configuration...
+                      </div>
                     </div>
                     <div className="text-white font-mono text-sm">
-                      <span className="text-yellow-400">dan:</span> @lisa let's try the CUDA rollback like opsara suggests
+                      <span className="text-accent1-400">opsynth &gt;</span> <span className="text-green-400">Operation completed successfully</span>
                     </div>
                     <div className="flex items-center bg-neutral-800/50 p-2 rounded-lg">
-                      <div className="text-neutral-400 line-through mr-2">Dashboards</div>
+                      <div className="text-neutral-400 line-through text-sm mr-2">Manual vCenter Tasks</div>
                       <div className="text-white">→</div>
-                      <div className="text-opsynth-400 ml-2">Conversational Insights</div>
+                      <div className="text-opsynth-400 ml-2 text-sm">Natural Language Commands</div>
                     </div>
                   </div>
                 </div>

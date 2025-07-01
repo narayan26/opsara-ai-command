@@ -2,16 +2,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Server, Database, Cpu } from "lucide-react";
+import { Server, Building, Cloud } from "lucide-react";
 
 const UseCasesSection = () => {
   return (
     <section id="use-cases" className="py-16 md:py-24 px-6 md:px-8 lg:px-12">
       <div className="container max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Built for the AI-native era</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Built for Modern Enterprise Infrastructure</h2>
           <p className="text-lg text-neutral-300">
-            Whether you're managing internal infrastructure or providing GPUaaS to customers, OpSynth helps you maintain reliability at scale.
+            OpSynth addresses the $130+ billion enterprise infrastructure market by unifying fragmented control planes across VMware, Nutanix, HPE, Dell, and bare metal systems.
           </p>
         </div>
 
@@ -19,8 +19,8 @@ const UseCasesSection = () => {
           <div className="flex justify-center mb-8">
             <TabsList className="grid w-full max-w-md grid-cols-3 bg-neutral-800">
               <TabsTrigger value="enterprise">Enterprise</TabsTrigger>
-              <TabsTrigger value="provider">Service Provider</TabsTrigger>
-              <TabsTrigger value="hyperscaler">Hyperscaler</TabsTrigger>
+              <TabsTrigger value="colocation">Colocation</TabsTrigger>
+              <TabsTrigger value="managed">Managed Services</TabsTrigger>
             </TabsList>
           </div>
 
@@ -30,47 +30,44 @@ const UseCasesSection = () => {
                 <Card className="border border-neutral-800 bg-neutral-900/50">
                   <CardHeader>
                     <CardTitle className="flex items-center">
-                      <Server className="h-6 w-6 mr-2 text-opsynth-400" />
-                      Enterprise GPU Infrastructure
+                      <Building className="h-6 w-6 mr-2 text-opsynth-400" />
+                      Enterprise Infrastructure
                     </CardTitle>
                     <CardDescription className="text-base text-neutral-400">
-                      For companies running internal ML/AI infrastructure
+                      Fortune 500 companies with hybrid VMware and multi-vendor infrastructure
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <p className="text-neutral-300">
-                      OpSynth helps internal SRE teams maintain reliability of GPU clusters supporting critical AI/ML workloads.
+                      Unify operations across VMware vCenter, Nutanix Prism, HPE GreenLake, and Dell APEX through a single AI-powered interface.
                     </p>
                     <ul className="space-y-2 text-neutral-300">
                       <li className="flex items-start">
                         <span className="text-opsynth-400 font-bold mr-2">•</span>
-                        <span>Reduce MTTR for GPU infrastructure issues by 75%</span>
+                        <span>Normalize SOAP, REST, and CLI APIs across all platforms</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-opsynth-400 font-bold mr-2">•</span>
-                        <span>Maintain high availability for AI model training and serving</span>
+                        <span>Reduce operational complexity from years to minutes</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-opsynth-400 font-bold mr-2">•</span>
-                        <span>Improve resource optimization through proactive monitoring</span>
+                        <span>Enterprise RBAC, audit logging, and compliance controls</span>
                       </li>
                     </ul>
                   </CardContent>
-                  <CardFooter>
-                    <Button className="bg-opsynth-600 hover:bg-opsynth-700">Learn More</Button>
-                  </CardFooter>
                 </Card>
               </div>
               <div className="order-1 lg:order-2">
                 <div className="bg-gradient-to-r from-opsynth-600 to-accent1-600 p-px rounded-xl">
                   <div className="bg-neutral-900 rounded-xl p-6">
-                    <div className="text-lg font-semibold mb-4">Customer story</div>
+                    <div className="text-lg font-semibold mb-4">Customer Impact</div>
                     <p className="italic text-neutral-400 mb-6">
-                      "OpSynth helped our AI infrastructure team reduce alert fatigue by 85% and improve our incident resolution times significantly. Our ML teams can focus on building better models without worrying about infrastructure reliability."
+                      "OpSynth eliminated the need for custom integrations across our VMware and Nutanix environments. Our infrastructure team can now execute complex migrations and maintenance through natural language commands."
                     </p>
                     <div>
-                      <p className="font-medium">SRE Manager</p>
-                      <p className="text-sm text-neutral-500">Fortune 500 Financial Institution</p>
+                      <p className="font-medium">Infrastructure Director</p>
+                      <p className="text-sm text-neutral-500">Global Financial Services Company</p>
                     </div>
                   </div>
                 </div>
@@ -78,53 +75,50 @@ const UseCasesSection = () => {
             </div>
           </TabsContent>
 
-          <TabsContent value="provider" className="mt-0">
+          <TabsContent value="colocation" className="mt-0">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
                 <Card className="border border-neutral-800 bg-neutral-900/50">
                   <CardHeader>
                     <CardTitle className="flex items-center">
-                      <Database className="h-6 w-6 mr-2 text-opsynth-400" />
-                      GPU Service Providers
+                      <Server className="h-6 w-6 mr-2 text-opsynth-400" />
+                      Colocation Providers
                     </CardTitle>
                     <CardDescription className="text-base text-neutral-400">
-                      For companies offering GPUaaS to external customers
+                      Data center operators managing multi-tenant infrastructure
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <p className="text-neutral-300">
-                      OpSynth helps service providers deliver reliable GPU infrastructure at scale to maintain customer satisfaction.
+                      Provide unified management capabilities to customers across diverse hardware platforms while maintaining secure tenant isolation.
                     </p>
                     <ul className="space-y-2 text-neutral-300">
                       <li className="flex items-start">
                         <span className="text-opsynth-400 font-bold mr-2">•</span>
-                        <span>Maintain industry-leading SLAs for GPU availability</span>
+                        <span>Multi-tenant credential isolation and secure access</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-opsynth-400 font-bold mr-2">•</span>
-                        <span>Proactively identify and resolve customer-impacting issues</span>
+                        <span>Support VMware, bare metal, and hybrid configurations</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-opsynth-400 font-bold mr-2">•</span>
-                        <span>Optimize fleet utilization without sacrificing reliability</span>
+                        <span>White-label deployment options for customer portals</span>
                       </li>
                     </ul>
                   </CardContent>
-                  <CardFooter>
-                    <Button className="bg-opsynth-600 hover:bg-opsynth-700">Learn More</Button>
-                  </CardFooter>
                 </Card>
               </div>
               <div className="order-1 lg:order-2">
                 <div className="bg-gradient-to-r from-opsynth-600 to-accent1-600 p-px rounded-xl">
                   <div className="bg-neutral-900 rounded-xl p-6">
-                    <div className="text-lg font-semibold mb-4">Customer story</div>
+                    <div className="text-lg font-semibold mb-4">Customer Impact</div>
                     <p className="italic text-neutral-400 mb-6">
-                      "As a GPU cloud provider, our customers expect 99.9% uptime. OpSynth helps us maintain that SLA by coordinating our incident response and helping us resolve issues before customers even notice them."
+                      "Our customers no longer need to learn multiple management interfaces. OpSynth provides a consistent experience whether they're managing VMware clusters or bare metal servers in our facilities."
                     </p>
                     <div>
                       <p className="font-medium">VP of Operations</p>
-                      <p className="text-sm text-neutral-500">Leading GPU Cloud Provider</p>
+                      <p className="text-sm text-neutral-500">Leading Colocation Provider</p>
                     </div>
                   </div>
                 </div>
@@ -132,53 +126,50 @@ const UseCasesSection = () => {
             </div>
           </TabsContent>
 
-          <TabsContent value="hyperscaler" className="mt-0">
+          <TabsContent value="managed" className="mt-0">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
                 <Card className="border border-neutral-800 bg-neutral-900/50">
                   <CardHeader>
                     <CardTitle className="flex items-center">
-                      <Cpu className="h-6 w-6 mr-2 text-opsynth-400" />
-                      Hyperscaler GPU Environments
+                      <Cloud className="h-6 w-6 mr-2 text-opsynth-400" />
+                      Managed Service Providers
                     </CardTitle>
                     <CardDescription className="text-base text-neutral-400">
-                      For GPU environments on AWS, Azure, Google Cloud, etc.
+                      MSPs delivering infrastructure services across multiple customer environments
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <p className="text-neutral-300">
-                      OpSynth helps teams running on hyperscaler platforms optimize their GPU resources and maintain application reliability.
+                      Scale operations across customer environments with unified automation and monitoring across all major infrastructure platforms.
                     </p>
                     <ul className="space-y-2 text-neutral-300">
                       <li className="flex items-start">
                         <span className="text-opsynth-400 font-bold mr-2">•</span>
-                        <span>Quickly identify issues in cloud-based ML pipelines</span>
+                        <span>Standardize operations across diverse customer stacks</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-opsynth-400 font-bold mr-2">•</span>
-                        <span>Maximize GPU utilization while controlling costs</span>
+                        <span>Automated remediation and proactive maintenance</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-opsynth-400 font-bold mr-2">•</span>
-                        <span>Improve coordination between ML and operations teams</span>
+                        <span>Comprehensive audit trails and compliance reporting</span>
                       </li>
                     </ul>
                   </CardContent>
-                  <CardFooter>
-                    <Button className="bg-opsynth-600 hover:bg-opsynth-700">Learn More</Button>
-                  </CardFooter>
                 </Card>
               </div>
               <div className="order-1 lg:order-2">
                 <div className="bg-gradient-to-r from-opsynth-600 to-accent1-600 p-px rounded-xl">
                   <div className="bg-neutral-900 rounded-xl p-6">
-                    <div className="text-lg font-semibold mb-4">Customer story</div>
+                    <div className="text-lg font-semibold mb-4">Customer Impact</div>
                     <p className="italic text-neutral-400 mb-6">
-                      "Our ML platform runs on AWS and Azure GPU instances. OpSynth helped us improve reliability while reducing our on-call burden by 70%. The ability to correlate issues across multiple cloud providers has been invaluable."
+                      "OpSynth enables our team to manage infrastructure for 50+ enterprise customers through a single interface. We've reduced our operational overhead by 60% while improving service quality."
                     </p>
                     <div>
-                      <p className="font-medium">Lead SRE</p>
-                      <p className="text-sm text-neutral-500">AI Health Technologies Startup</p>
+                      <p className="font-medium">Chief Technology Officer</p>
+                      <p className="text-sm text-neutral-500">Enterprise Managed Services Provider</p>
                     </div>
                   </div>
                 </div>
