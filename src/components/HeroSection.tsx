@@ -15,7 +15,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-neutral-300">
-              OpSynth normalizes VMware, Nutanix, HPE, Dell, and bare metal infrastructure into a unified AI-powered management layer. Control complex operations through natural language while maintaining enterprise security and compliance.
+              OpSynth normalizes VMware, Nutanix, HPE, Dell, Kubernetes, and bare metal infrastructure into a unified AI-powered management layer. Control complex operations through natural language while maintaining enterprise security and compliance.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
