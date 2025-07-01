@@ -92,8 +92,13 @@ const HeroSection = () => {
                 {/* Command Input */}
                 <div className="bg-neutral-800 rounded-lg p-3 border border-neutral-700">
                   <div className="text-opsynth-400 text-sm mb-2">Natural Language Command:</div>
-                  <div className="text-white font-mono text-sm typing-animation">
-                    "Create a SQL Server DB loan-db-008 instance based on the latest gold image, give it same high performance storage as loan-db-007, and ensure that only app-server-45 and app-server-46 have secure connectivity to the new VM"
+                  <div className="text-white font-mono text-sm min-h-[4rem] flex items-start">
+                    <div className="typing-container">
+                      <span className="typing-text">
+                        "Create a SQL Server DB loan-db-008 instance based on the latest gold image, give it same high performance storage as loan-db-007, and ensure that only app-server-45 and app-server-46 have secure connectivity to the new VM"
+                      </span>
+                      <span className="typing-cursor">|</span>
+                    </div>
                   </div>
                 </div>
 

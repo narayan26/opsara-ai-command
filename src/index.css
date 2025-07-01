@@ -75,11 +75,49 @@
     @apply font-mono bg-neutral-950 rounded-lg p-4 text-green-400 border border-neutral-800 shadow-xl;
   }
   
-  .typing-animation {
-    @apply overflow-hidden whitespace-nowrap border-r-4 inline-block animate-typing;
+  .typing-container {
+    @apply relative flex flex-wrap;
+  }
+  
+  .typing-text {
+    @apply inline-block overflow-hidden whitespace-normal;
+    animation: typing 4s steps(200) 1s forwards;
+    width: 0;
+  }
+  
+  .typing-cursor {
+    @apply inline-block ml-1;
+    animation: blink 1s infinite, cursor-move 4s steps(200) 1s forwards;
   }
   
   .cursor-blink {
     @apply border-r-4 animate-blink;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cursor-move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(0);
   }
 }
