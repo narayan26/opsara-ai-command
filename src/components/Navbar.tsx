@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,16 +16,17 @@ const Navbar = () => {
       <div className="container max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary">
+            <Link to="/" className="text-2xl font-bold text-primary">
               <span className="text-accent">OpSynth</span> AI
-            </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <a href="#features" className="text-foreground/80 hover:text-foreground transition-colors">Features</a>
-            <a href="#use-cases" className="text-foreground/80 hover:text-foreground transition-colors">Use Cases</a>
-            <a href="#workflow" className="text-foreground/80 hover:text-foreground transition-colors">How It Works</a>
+            <a href="/#features" className="text-foreground/80 hover:text-foreground transition-colors">Features</a>
+            <a href="/#use-cases" className="text-foreground/80 hover:text-foreground transition-colors">Use Cases</a>
+            <a href="/#workflow" className="text-foreground/80 hover:text-foreground transition-colors">How It Works</a>
+            <Link to="/careers" className="text-foreground/80 hover:text-foreground transition-colors">Careers</Link>
             <Button size="sm" variant="outline" className="ml-2">
               Documentation
             </Button>
@@ -48,9 +50,10 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-4 space-y-4 flex flex-col">
-            <a href="#features" className="text-foreground/80 hover:text-foreground transition-colors py-2">Features</a>
-            <a href="#use-cases" className="text-foreground/80 hover:text-foreground transition-colors py-2">Use Cases</a>
-            <a href="#workflow" className="text-foreground/80 hover:text-foreground transition-colors py-2">How It Works</a>
+            <a href="/#features" className="text-foreground/80 hover:text-foreground transition-colors py-2">Features</a>
+            <a href="/#use-cases" className="text-foreground/80 hover:text-foreground transition-colors py-2">Use Cases</a>
+            <a href="/#workflow" className="text-foreground/80 hover:text-foreground transition-colors py-2">How It Works</a>
+            <Link to="/careers" className="text-foreground/80 hover:text-foreground transition-colors py-2">Careers</Link>
             <Button variant="outline" className="w-full justify-start">
               Documentation
             </Button>
