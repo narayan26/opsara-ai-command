@@ -2,7 +2,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Clock, Mail, ExternalLink, Rocket, Code } from "lucide-react";
+import { MapPin, Clock, Mail, Rocket, Code } from "lucide-react";
 
 const JobListings = () => {
   const jobs = [
@@ -181,21 +181,13 @@ const JobListings = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between pt-4 border-t border-neutral-800">
-                  <div className="text-sm text-neutral-400">
+                <div className="flex items-center justify-center pt-4 border-t border-neutral-800">
+                  <div className="text-sm text-neutral-400 text-center">
                     <span>Send your LinkedIn profile, GitHub handle and resume to: </span>
                     <a href="mailto:jobs@opsynth.ai" className="text-opsynth-400 hover:text-opsynth-300 transition-colors">
                       jobs@opsynth.ai
                     </a>
                   </div>
-                  <Button 
-                    variant="outline" 
-                    className="border-opsynth-600/30 text-opsynth-300 hover:bg-opsynth-600/10"
-                    onClick={() => window.open('mailto:jobs@opsynth.ai?subject=Application: ' + job.title + '&body=Hi OpSynth team,%0D%0A%0D%0AI am interested in the ' + job.title + ' position.%0D%0A%0D%0ALinkedIn: [Your LinkedIn URL]%0D%0AGitHub: [Your GitHub handle]%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0ABest regards,', '_blank')}
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Send LinkedIn, GitHub & Resume
-                  </Button>
                 </div>
               </CardContent>
             </Card>
