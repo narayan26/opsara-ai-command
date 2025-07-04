@@ -4,40 +4,40 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const features = [
   {
-    icon: <AlertCircle className="h-10 w-10 text-opsynth-400" />,
-    title: "Intelligent Alert Triage",
+    icon: <Shield className="h-10 w-10 text-opsynth-400" />,
+    title: "Unified Control Plane",
     description:
-      "Automatically correlate and summarize alerts across your monitoring stack to identify root causes faster.",
-  },
-  {
-    icon: <MessageSquare className="h-10 w-10 text-opsynth-400" />,
-    title: "Conversation Analysis",
-    description:
-      "Extract key insights from Slack war rooms, tickets, and RCA threads to keep everyone aligned during incidents.",
-  },
-  {
-    icon: <Search className="h-10 w-10 text-opsynth-400" />,
-    title: "Knowledge Retrieval",
-    description:
-      "Search across your runbooks, docs, and past incident history to surface relevant information during outages.",
+      "Centralize day-to-day operations across VMware, Nutanix, HPE, Dell, and bare metal infrastructure through a single interface.",
   },
   {
     icon: <Zap className="h-10 w-10 text-opsynth-400" />,
-    title: "Rapid Response",
+    title: "Multi-Language Automation",
     description:
-      "Generate actionable recommendations and playbooks based on historical data and current system state.",
+      "Transform natural language commands into PowerShell, Python, Terraform, and vendor-specific scripts automatically.",
   },
   {
     icon: <BarChart2 className="h-10 w-10 text-opsynth-400" />,
-    title: "Impact Analysis",
+    title: "Operational Optimization",
     description:
-      "Estimate business impact and prioritize incidents based on affected services, customers, and revenue.",
+      "Reduce operational toil with intelligent capacity planning, cost optimization, and resource utilization insights.",
   },
   {
-    icon: <Shield className="h-10 w-10 text-opsynth-400" />,
-    title: "Secure By Design",
+    icon: <MessageSquare className="h-10 w-10 text-opsynth-400" />,
+    title: "Intent-Based Operations",
     description:
-      "Enterprise-grade security with data residency options, SSO, and role-based access controls.",
+      "Execute complex infrastructure tasks through conversational commands that understand operational context and dependencies.",
+  },
+  {
+    icon: <Search className="h-10 w-10 text-opsynth-400" />,
+    title: "Cross-Platform Discovery",
+    description:
+      "Automatically discover and map dependencies across hybrid infrastructure to enable safe, coordinated operations.",
+  },
+  {
+    icon: <AlertCircle className="h-10 w-10 text-opsynth-400" />,
+    title: "Enterprise Governance",
+    description:
+      "Maintain compliance and audit trails while enabling self-service operations through role-based access controls.",
   },
 ];
 
@@ -46,9 +46,9 @@ const FeaturesSection = () => {
     <section id="features" className="py-16 md:py-24 px-6 md:px-8 lg:px-12 bg-neutral-900 dark:bg-neutral-900">
       <div className="container max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Less chaos, more clarity</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Control. Automate. Optimize.</h2>
           <p className="text-lg text-neutral-300">
-            OpSynth acts as your always-on command center, helping you cut through the noise and focus on what matters during critical incidents.
+            OpSynth transforms complex infrastructure operations into simple, intelligent workflows that reduce operational overhead while maintaining enterprise security and compliance.
           </p>
         </div>
 
