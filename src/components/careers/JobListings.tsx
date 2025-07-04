@@ -13,21 +13,24 @@ const JobListings = () => {
       type: "Full-time",
       workMode: "Hybrid or Remote",
       icon: <Rocket className="h-6 w-6 text-opsynth-400" />,
-      description: "Lead the technical architecture of OpSynth's HybridInfraGraph and MCP services. Work directly with founders to shape our core platform.",
+      description: "Lead the technical architecture of OpSynth's HybridInfraGraph and MCP services. Work directly with founders to shape our agentic platform and AI-powered infrastructure control plane.",
       requirements: [
         "6+ years building distributed systems or enterprise platforms",
+        "1+ years experience working with AI technology (LLMs, Agents, RAG, etc.)",
         "Strong experience with Python, Kubernetes, Docker, and cloud-native design",
         "Prior experience with VMware, Nutanix, or enterprise DevOps platforms",
         "Familiarity with public clouds (AWS, Azure, GCP) and API integration patterns"
       ],
       responsibilities: [
         "Design and lead development of scalable, multi-tenant control plane services",
-        "Build integrations across APIs from vSphere, NSX, Nutanix Prism, and cloud providers",
+        "Build agentic platform components that connect AI agents to real infrastructure systems",
+        "Develop integrations across APIs from vSphere, NSX, Nutanix Prism, and cloud providers", 
         "Work on LLM-powered automation flows and natural language interfaces",
         "Mentor engineers and contribute to hiring our India-based technical team"
       ],
       bonusPoints: [
-        "Experience building control planes, observability tools, or AI-driven interfaces",
+        "Experience building agentic platforms, control planes, or AI-driven interfaces",
+        "Deep knowledge of LLM frameworks, RAG systems, or multi-agent orchestration",
         "Contributions to open-source projects related to infrastructure or ML tooling"
       ]
     },
@@ -38,21 +41,24 @@ const JobListings = () => {
       type: "Full-time",
       workMode: "Hybrid or Remote",
       icon: <Code className="h-6 w-6 text-opsynth-400" />,
-      description: "Build core components of OpSynth's control and automation layer. Connect AI agents to real enterprise systems and drive operational insights.",
+      description: "Build core components of OpSynth's agentic control and automation layer. Connect AI agents to real enterprise systems and drive intelligent operational workflows.",
       requirements: [
         "2–5 years of backend development experience in fast-paced environments",
+        "1+ years experience working with AI technology (LLMs, Agents, RAG, etc.)",
         "Proficiency in Python and familiarity with REST APIs and automation tooling",
         "Experience with containerized services (Docker, Kubernetes)",
         "Exposure to infrastructure platforms (VMware, Nutanix, HPE, or public cloud)"
       ],
       responsibilities: [
         "Build APIs and containerized services that interact with infrastructure control planes",
+        "Develop agentic platform services that enable AI agents to perform real infrastructure operations",
         "Contribute to MCP (Model Context Protocol) services for VMware, Nutanix, and cloud providers",
-        "Implement backend workflows that drive LLM-based operational insights",
+        "Implement backend workflows that drive LLM-based operational insights and automation",
         "Write high-quality, testable Python code and ship production features quickly"
       ],
       bonusPoints: [
-        "Experience with LLM frameworks, agents, or embedding pipelines",
+        "Experience with agentic platforms, LLM frameworks, or embedding pipelines",
+        "Knowledge of RAG systems, multi-agent workflows, or prompt engineering",
         "Projects involving hybrid cloud, multi-vendor systems, or infrastructure monitoring"
       ]
     }
@@ -109,10 +115,10 @@ const JobListings = () => {
                 <div className="p-6 rounded-lg bg-neutral-950/50 border border-neutral-800">
                   <h4 className="text-lg font-semibold mb-3 text-opsynth-400">About OpSynth</h4>
                   <p className="text-neutral-300 leading-relaxed">
-                    OpSynth is building the <strong>AI Control Plane for Hybrid Cloud</strong>. Our mission is to simplify how enterprise infrastructure is controlled, observed, and automated — through a secure, multi-vendor platform powered by LLMs and contextual intelligence.
+                    OpSynth is building the <strong>AI Control Plane for Hybrid Cloud</strong>. Our mission is to simplify how enterprise infrastructure is controlled, observed, and automated — through a secure, multi-vendor agentic platform powered by LLMs and contextual intelligence.
                   </p>
                   <p className="text-neutral-300 leading-relaxed mt-3">
-                    We're a seed-stage startup founded by veterans from VMware, Salesforce, and the OpenAI ecosystem. We integrate with platforms like VMware, Nutanix, and NVIDIA-powered clusters, unifying fragmented operational interfaces with natural language and automation workflows.
+                    We're a seed-stage startup founded by veterans from VMware, Salesforce, and the OpenAI ecosystem. We integrate with platforms like VMware, Nutanix, and NVIDIA-powered clusters, unifying fragmented operational interfaces with intelligent agents and automation workflows.
                   </p>
                 </div>
 
@@ -158,7 +164,7 @@ const JobListings = () => {
                   <div className="grid md:grid-cols-2 gap-4 text-sm text-neutral-300">
                     <div className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-opsynth-400"></div>
-                      <span>Build the control plane for hybrid enterprise infrastructure</span>
+                      <span>Build the agentic control plane for hybrid enterprise infrastructure</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-opsynth-400"></div>
@@ -177,7 +183,7 @@ const JobListings = () => {
 
                 <div className="flex items-center justify-between pt-4 border-t border-neutral-800">
                   <div className="text-sm text-neutral-400">
-                    <span>Apply via: </span>
+                    <span>Send your LinkedIn profile, GitHub handle and resume to: </span>
                     <a href="mailto:jobs@opsynth.ai" className="text-opsynth-400 hover:text-opsynth-300 transition-colors">
                       jobs@opsynth.ai
                     </a>
@@ -185,10 +191,10 @@ const JobListings = () => {
                   <Button 
                     variant="outline" 
                     className="border-opsynth-600/30 text-opsynth-300 hover:bg-opsynth-600/10"
-                    onClick={() => window.open('mailto:jobs@opsynth.ai?subject=Application: ' + job.title + '&body=Hi OpSynth team,%0D%0A%0D%0AI am interested in the ' + job.title + ' position. Please find my LinkedIn profile and resume attached.%0D%0A%0D%0ALinkedIn: [Your LinkedIn URL]%0D%0A%0D%0ABest regards,', '_blank')}
+                    onClick={() => window.open('mailto:jobs@opsynth.ai?subject=Application: ' + job.title + '&body=Hi OpSynth team,%0D%0A%0D%0AI am interested in the ' + job.title + ' position.%0D%0A%0D%0ALinkedIn: [Your LinkedIn URL]%0D%0AGitHub: [Your GitHub handle]%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0ABest regards,', '_blank')}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
-                    Send Application
+                    Send LinkedIn, GitHub & Resume
                   </Button>
                 </div>
               </CardContent>
