@@ -2,7 +2,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Clock, Mail, Rocket, Code } from "lucide-react";
+import { MapPin, Clock, Mail, Rocket, Code, Plane } from "lucide-react";
 
 const JobListings = () => {
   const jobs = [
@@ -61,6 +61,34 @@ const JobListings = () => {
         "Knowledge of RAG systems, multi-agent workflows, or prompt engineering",
         "Projects involving hybrid cloud, multi-vendor systems, or infrastructure monitoring"
       ]
+    },
+    {
+      id: 3,
+      title: "Forward Deployed Engineer – VMware Infrastructure",
+      location: "Anywhere in the U.S.",
+      type: "Full-time",
+      workMode: "Remote or Hybrid • Up to 50% travel",
+      icon: <Plane className="h-6 w-6 text-opsynth-400" />,
+      description: "Lead deployments of OpSynth's platform into enterprise environments. Be hands-on with complex hybrid environments and act as a trusted technical advisor to customers.",
+      requirements: [
+        "15+ years of experience in infrastructure engineering, enterprise architecture, or platform/SRE roles",
+        "Deep hands-on expertise with VMware stack: vSphere, vSAN, NSX, vCenter",
+        "Experience with automation frameworks: PowerCLI, Python (PyVMOMI), Ansible, or similar",
+        "Prior role as a VMware solution architect, field engineer, or hands-on IT infrastructure leader",
+        "Strong understanding of hybrid and multi-cloud architectures"
+      ],
+      responsibilities: [
+        "Lead deployment and integration of OpSynth in complex VMware environments (vSphere, vSAN, NSX)",
+        "Customize automation workflows using PowerCLI, PyVMOMI, and VMware API layers (SOAP, REST)",
+        "Interface with customer architects and SRE/DevOps teams to accelerate time to value",
+        "Build scripts, Terraform modules, or lightweight integrations as needed",
+        "Travel to enterprise sites (up to 50%) to drive adoption and provide architecture guidance"
+      ],
+      bonusPoints: [
+        "Startup experience or comfort working in unstructured, high-autonomy environments",
+        "Familiarity with LLM-powered or AI-driven operational tooling",
+        "Exposure to other platforms like Nutanix, HPE GreenLake, Dell APEX"
+      ]
     }
   ];
 
@@ -97,13 +125,6 @@ const JobListings = () => {
                       </div>
                     </div>
                   </div>
-                  <Button 
-                    className="bg-opsynth-600 hover:bg-opsynth-700 flex-shrink-0"
-                    onClick={() => window.open('mailto:jobs@opsynth.ai?subject=Application: ' + job.title, '_blank')}
-                  >
-                    <Mail className="h-4 w-4 mr-2" />
-                    Apply Now
-                  </Button>
                 </div>
                 <CardDescription className="text-base mt-4">
                   {job.description}
