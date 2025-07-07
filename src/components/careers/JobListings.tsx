@@ -8,6 +8,34 @@ const JobListings = () => {
   const jobs = [
     {
       id: 1,
+      title: "Technical Lead – AI Infrastructure Platform",
+      location: "San Francisco Bay Area",
+      type: "Full-time",
+      workMode: "Hybrid (3 days in office)",
+      icon: <Rocket className="h-6 w-6 text-opsynth-400" />,
+      description: "Lead the development of OpSynth's core AI infrastructure platform. Work directly with founders to architect and build the next generation of agentic control systems for enterprise infrastructure.",
+      requirements: [
+        "8+ years building distributed systems, cloud platforms, or enterprise infrastructure software",
+        "2+ years experience working with AI technology (LLMs, Agents, RAG, etc.)",
+        "Strong expertise in Python, Kubernetes, Docker, and cloud-native architectures",
+        "Experience with infrastructure platforms like VMware, Nutanix, or public cloud providers",
+        "Track record of leading technical teams and driving complex projects to completion"
+      ],
+      responsibilities: [
+        "Architect and lead development of OpSynth's agentic platform and AI control plane",
+        "Build scalable, multi-tenant services that connect AI agents to real infrastructure systems",
+        "Lead integration efforts across VMware vSphere, NSX, Nutanix Prism, and cloud providers",
+        "Drive technical strategy for LLM-powered automation and natural language interfaces",
+        "Mentor engineering team and establish technical best practices"
+      ],
+      bonusPoints: [
+        "Experience building agentic platforms, AI-driven infrastructure tools, or MLOps systems",
+        "Deep knowledge of LLM frameworks, multi-agent orchestration, or enterprise AI platforms",
+        "Background in infrastructure automation, control planes, or developer tooling"
+      ]
+    },
+    {
+      id: 2,
       title: "Technical Lead – Infrastructure Intelligence",
       location: "Bangalore, Chennai, Pune, or Hyderabad",
       type: "Full-time",
@@ -35,7 +63,7 @@ const JobListings = () => {
       ]
     },
     {
-      id: 2,
+      id: 3,
       title: "Software Engineer – LLM + Infrastructure Automation",
       location: "Bangalore, Chennai, Pune, or Hyderabad", 
       type: "Full-time",
@@ -63,7 +91,7 @@ const JobListings = () => {
       ]
     },
     {
-      id: 3,
+      id: 4,
       title: "Forward Deployed Engineer – VMware Infrastructure",
       location: "Anywhere in the U.S.",
       type: "Full-time",
