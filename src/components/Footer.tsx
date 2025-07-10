@@ -1,18 +1,19 @@
 
-import { Twitter, Linkedin, Github } from "lucide-react";
+import { Twitter, Linkedin, Github, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 py-12 px-6 md:px-8 lg:px-12 border-t border-neutral-800">
+    <footer className="bg-neutral-950 py-16 px-6 md:px-8 lg:px-12 border-t border-neutral-800">
       <div className="container max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-1">
             <div className="text-2xl font-bold text-primary mb-4">
               <span className="text-accent">OpSynth</span> AI
             </div>
-            <p className="text-neutral-300 mb-6 max-w-md">
-              Synthesized Operations for AI Apps. Less chaos, more clarity during critical incidents.
+            <p className="text-neutral-400 mb-6 max-w-md leading-relaxed">
+              GenAI-native infrastructure control plane for enterprise hybrid environments. 
+              Reduce operational toil and accelerate infrastructure management with natural language AI.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-neutral-500 hover:text-opsynth-400 transition-colors">
@@ -29,36 +30,77 @@ const Footer = () => {
 
           {/* Product */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Product</h4>
+            <h4 className="font-semibold text-lg mb-6 text-white">Platform</h4>
             <ul className="space-y-3">
               <li><a href="#features" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Features</a></li>
               <li><a href="#use-cases" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Use Cases</a></li>
-              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Pricing</a></li>
-              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Documentation</a></li>
-              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">API</a></li>
+              <li><a href="#workflow" className="text-neutral-400 hover:text-opsynth-400 transition-colors">How It Works</a></li>
+              <li><a href="/app" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Live Demo</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Integrations</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Security</a></li>
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Solutions */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Company</h4>
+            <h4 className="font-semibold text-lg mb-6 text-white">Solutions</h4>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">VMware Environments</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Kubernetes</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Nutanix</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Multi-Cloud</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Bare Metal</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Cost Optimization</a></li>
+            </ul>
+          </div>
+
+          {/* Company & Contact */}
+          <div>
+            <h4 className="font-semibold text-lg mb-6 text-white">Company</h4>
             <ul className="space-y-3">
               <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">About</a></li>
+              <li><a href="/careers" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Careers</a></li>
               <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Blog</a></li>
-              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Careers</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Documentation</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Support</a></li>
               <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Contact</a></li>
             </ul>
+            
+            {/* Contact Info */}
+            <div className="mt-8 space-y-3">
+              <div className="flex items-center gap-3 text-neutral-400">
+                <Mail size={16} />
+                <span className="text-sm">hello@opsynth.ai</span>
+              </div>
+              <div className="flex items-center gap-3 text-neutral-400">
+                <MapPin size={16} />
+                <span className="text-sm">San Francisco, CA</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-neutral-500 text-sm">
-            &copy; {new Date().getFullYear()} OpSynth AI, Inc. All rights reserved.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Terms</a>
-            <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Privacy</a>
-            <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Security</a>
+        {/* Bottom Section */}
+        <div className="mt-16 pt-8 border-t border-neutral-800">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              <p className="text-neutral-500 text-sm">
+                &copy; {new Date().getFullYear()} OpSynth AI, Inc. All rights reserved.
+              </p>
+              <div className="flex items-center gap-2 text-neutral-500 text-sm">
+                <span>•</span>
+                <span>SOC2 Type 2</span>
+                <span>•</span>
+                <span>HIPAA Compliant</span>
+                <span>•</span>
+                <span>ISO 27001</span>
+              </div>
+            </div>
+            <div className="flex space-x-6">
+              <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Terms of Service</a>
+              <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Privacy Policy</a>
+              <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Security</a>
+            </div>
           </div>
         </div>
       </div>
