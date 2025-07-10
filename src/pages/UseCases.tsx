@@ -4,14 +4,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Terminal, Database, Shield, Zap, GitBranch, Monitor, Settings, Wrench, DollarSign } from "lucide-react";
+import { ArrowRight, Terminal, Database, Shield, Zap, GitBranch, Monitor, Settings, Wrench, DollarSign, Code } from "lucide-react";
 
 const useCases = [
   {
-    icon: <Terminal className="h-8 w-8 text-opsynth-400" />,
+    icon: <Code className="h-8 w-8 text-opsynth-400" />,
     title: "Infrastructure Automation",
-    description: "Schedule bulk operations, orchestrate complex workflows, and automate repetitive tasks across your entire infrastructure.",
-    example: "Schedule daily restart of all dev VMs at 2am"
+    description: "Bring in your existing scripts and generate new PowerShell, Python, and Terraform code with natural language commands.",
+    example: "Generate a PowerShell script to restart all VMs with tag 'dev'"
   },
   {
     icon: <Database className="h-8 w-8 text-opsynth-400" />,
@@ -32,7 +32,7 @@ const useCases = [
     example: "Scale api-service to 5 replicas"
   },
   {
-    icon: <Shield className="h-8 w-8 text-opsynth-400" />,
+    icon: <Zap className="h-8 w-8 text-opsynth-400" />,
     title: "Backup & Disaster Recovery",
     description: "Integrate with Cohesity, Veeam, and other backup solutions for automated protection workflows.",
     example: "Check last backup status of app-db VM"
@@ -54,6 +54,12 @@ const useCases = [
     title: "Cost Optimization",
     description: "Identify idle resources, recommend right-sizing, and plan capacity expansions.",
     example: "Which hosts are running under 20% CPU over 7 days"
+  },
+  {
+    icon: <Shield className="h-8 w-8 text-opsynth-400" />,
+    title: "Secure",
+    description: "Apply RBAC configurations, manage audit logs, implement firewall rules, and enforce tag policies across your infrastructure.",
+    example: "List VMs with open SSH port"
   }
 ];
 

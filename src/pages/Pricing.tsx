@@ -9,8 +9,8 @@ import { Check, ArrowRight } from "lucide-react";
 const plans = [
   {
     name: "Essentials",
-    price: "$25",
-    period: "per managed resource/month",
+    price: "$300",
+    period: "per managed resource/year",
     limit: "Up to 100 resources",
     description: "Perfect for small to medium infrastructure environments",
     features: [
@@ -26,8 +26,8 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "$50",
-    period: "per managed resource/month",
+    price: "$600",
+    period: "per managed resource/year",
     limit: "Up to 1,000 resources",
     description: "Advanced features for growing enterprise teams",
     features: [
@@ -36,16 +36,15 @@ const plans = [
       "Backup & disaster recovery integration",
       "Patching & upgrade orchestration",
       "RBAC and security configurations",
-      "Enterprise SLA support",
-      "Air-gapped deployment option"
+      "Enterprise SLA support"
     ],
     cta: "Choose Pro",
     popular: true
   },
   {
     name: "Enterprise AI",
-    price: "$85",
-    period: "per managed resource/month",
+    price: "$1,020",
+    period: "per managed resource/year",
     limit: "5,000+ resources",
     description: "Full-featured solution for large enterprise environments",
     features: [
@@ -56,7 +55,8 @@ const plans = [
       "Advanced analytics & reporting",
       "BYO-LLM support",
       "24x7 premium support",
-      "FedRAMP compliance (air-gapped)"
+      "Air-gapped deployment option",
+      "FedRAMP compliance"
     ],
     cta: "Contact Sales",
     popular: false
@@ -141,7 +141,7 @@ const Pricing = () => {
                 <li>• <strong>SaaS:</strong> Fully managed cloud service</li>
                 <li>• <strong>Cloud-Prem:</strong> Container in your VPC</li>
                 <li>• <strong>On-Premises:</strong> Self-hosted with cloud connectivity</li>
-                <li>• <strong>Air-Gapped:</strong> Complete offline deployment</li>
+                <li>• <strong>Air-Gapped:</strong> Complete offline deployment (Enterprise AI only)</li>
               </ul>
             </div>
             
