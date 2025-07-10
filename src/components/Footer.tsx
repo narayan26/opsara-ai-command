@@ -1,5 +1,6 @@
 
-import { Twitter, Linkedin, Github, Mail, Phone, MapPin } from "lucide-react";
+import { Twitter, Linkedin, Github, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,8 +13,7 @@ const Footer = () => {
               <span className="text-accent">OpSynth</span> AI
             </div>
             <p className="text-neutral-400 mb-6 max-w-md leading-relaxed">
-              GenAI-native infrastructure control plane for enterprise hybrid environments. 
-              Reduce operational toil and accelerate infrastructure management with natural language AI.
+              AI Control Plane for Hybrid Cloud. Reduce operational complexity and accelerate infrastructure management with natural language automation.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-neutral-500 hover:text-opsynth-400 transition-colors">
@@ -32,12 +32,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-6 text-white">Platform</h4>
             <ul className="space-y-3">
-              <li><a href="#features" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Features</a></li>
-              <li><a href="#use-cases" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Use Cases</a></li>
-              <li><a href="#workflow" className="text-neutral-400 hover:text-opsynth-400 transition-colors">How It Works</a></li>
-              <li><a href="/app" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Live Demo</a></li>
-              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Integrations</a></li>
-              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Security</a></li>
+              <li><a href="/#features" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Features</a></li>
+              <li><Link to="/use-cases" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Use Cases</Link></li>
+              <li><a href="/#workflow" className="text-neutral-400 hover:text-opsynth-400 transition-colors">How It Works</a></li>
+              <li><Link to="/app" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Demo</Link></li>
+              <li><Link to="/pricing" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Pricing</Link></li>
             </ul>
           </div>
 
@@ -49,8 +48,7 @@ const Footer = () => {
               <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Kubernetes</a></li>
               <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Nutanix</a></li>
               <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Multi-Cloud</a></li>
-              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Bare Metal</a></li>
-              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Cost Optimization</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Hybrid Infrastructure</a></li>
             </ul>
           </div>
 
@@ -59,10 +57,9 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-6 text-white">Company</h4>
             <ul className="space-y-3">
               <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">About</a></li>
-              <li><a href="/careers" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Careers</a></li>
+              <li><Link to="/careers" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Careers</Link></li>
               <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Blog</a></li>
               <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Documentation</a></li>
-              <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Support</a></li>
               <li><a href="#" className="text-neutral-400 hover:text-opsynth-400 transition-colors">Contact</a></li>
             </ul>
             
@@ -89,16 +86,16 @@ const Footer = () => {
               </p>
               <div className="flex items-center gap-2 text-neutral-500 text-sm">
                 <span>•</span>
-                <span>SOC2 Type 2</span>
+                <span>SOC2 Ready</span>
                 <span>•</span>
                 <span>HIPAA Compliant</span>
                 <span>•</span>
-                <span>ISO 27001</span>
+                <span>FedRAMP Ready</span>
               </div>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Terms of Service</a>
-              <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Privacy Policy</a>
+              <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Terms</a>
+              <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Privacy</a>
               <a href="#" className="text-neutral-500 hover:text-opsynth-400 text-sm">Security</a>
             </div>
           </div>

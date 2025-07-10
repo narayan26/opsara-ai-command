@@ -30,13 +30,10 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="/#features" className="text-foreground/80 hover:text-foreground transition-colors font-medium">Features</a>
-            <a href="/#use-cases" className="text-foreground/80 hover:text-foreground transition-colors font-medium">Use Cases</a>
+            <Link to="/use-cases" className="text-foreground/80 hover:text-foreground transition-colors font-medium">Use Cases</Link>
             <a href="/#workflow" className="text-foreground/80 hover:text-foreground transition-colors font-medium">How It Works</a>
+            <Link to="/pricing" className="text-foreground/80 hover:text-foreground transition-colors font-medium">Pricing</Link>
             <Link to="/app" className="text-foreground/80 hover:text-foreground transition-colors font-medium">Demo</Link>
-            <Link to="/careers" className="text-foreground/80 hover:text-foreground transition-colors font-medium">Careers</Link>
-            <Button size="sm" variant="outline" className="ml-4 border-opsynth-600 text-opsynth-400 hover:bg-opsynth-600/10">
-              Documentation
-            </Button>
             <Button size="sm" className="bg-opsynth-600 hover:bg-opsynth-700 text-white">
               <a href="https://forms.gle/KenQoq3VwLtZhSxk7" target="_blank" rel="noopener noreferrer">
                 Join Interest List
@@ -60,13 +57,10 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-4 space-y-4 flex flex-col border-t border-border">
             <a href="/#features" className="text-foreground/80 hover:text-foreground transition-colors py-2 font-medium">Features</a>
-            <a href="/#use-cases" className="text-foreground/80 hover:text-foreground transition-colors py-2 font-medium">Use Cases</a>
+            <Link to="/use-cases" className="text-foreground/80 hover:text-foreground transition-colors py-2 font-medium">Use Cases</Link>
             <a href="/#workflow" className="text-foreground/80 hover:text-foreground transition-colors py-2 font-medium">How It Works</a>
+            <Link to="/pricing" className="text-foreground/80 hover:text-foreground transition-colors py-2 font-medium">Pricing</Link>
             <Link to="/app" className="text-foreground/80 hover:text-foreground transition-colors py-2 font-medium">Demo</Link>
-            <Link to="/careers" className="text-foreground/80 hover:text-foreground transition-colors py-2 font-medium">Careers</Link>
-            <Button variant="outline" className="w-full justify-start border-opsynth-600 text-opsynth-400 hover:bg-opsynth-600/10">
-              Documentation
-            </Button>
             <Button className="w-full justify-start bg-opsynth-600 hover:bg-opsynth-700 text-white">
               <a href="https://forms.gle/KenQoq3VwLtZhSxk7" target="_blank" rel="noopener noreferrer">
                 Join Interest List
