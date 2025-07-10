@@ -63,14 +63,14 @@ const FeaturesSection = () => {
         {/* Platform Support */}
         <div className="mt-20 text-center">
           <h3 className="text-2xl font-bold text-white mb-8">Supported Platforms</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
             {[
-              "VMware vSphere",
+              "VMware",
               "Kubernetes",
+              "Bare Metal",
               "Nutanix",
               "NetApp",
-              "Cisco NSX",
-              "Terraform"
+              "Cisco"
             ].map((platform, index) => (
               <div key={index} className="p-3 bg-neutral-900/50 rounded-lg border border-neutral-800 hover:border-opsynth-600/50 transition-colors">
                 <span className="text-sm text-neutral-300 font-medium">{platform}</span>
