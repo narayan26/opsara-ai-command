@@ -9,7 +9,7 @@ import { Check, ArrowRight } from "lucide-react";
 const plans = [
   {
     name: "Essentials",
-    price: "$300",
+    price: "$25",
     period: "per managed resource/year",
     limit: "Up to 100 resources",
     description: "Perfect for small to medium infrastructure environments",
@@ -26,7 +26,7 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "$600",
+    price: "$50",
     period: "per managed resource/year",
     limit: "Up to 1,000 resources",
     description: "Advanced features for growing enterprise teams",
@@ -43,7 +43,7 @@ const plans = [
   },
   {
     name: "Enterprise AI",
-    price: "$1,020",
+    price: "$85",
     period: "per managed resource/year",
     limit: "5,000+ resources",
     description: "Full-featured solution for large enterprise environments",
